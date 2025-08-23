@@ -1,6 +1,6 @@
 # Music-Retail-Insight-
 🎶 Music Store Data Analysis
-This project performs a comprehensive SQL analysis on a sample music store database. The goal is to answer a series of business questions ranging from beginner to advanced, providing actionable insights for the store's marketing and business strategy.
+In this project I perform a comprehensive SQL analysis on a sample music store database. The goal is to answer a series of business questions ranging from beginner to advanced, providing actionable insights for the store's marketing and business strategy.
 
 ✨ Project Highlights
 🔍 Three Tiers of Queries: The project is structured into three distinct question sets, demonstrating proficiency across various SQL concepts:
