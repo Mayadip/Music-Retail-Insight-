@@ -1,11 +1,9 @@
-/*	Question Set 1 - Easy */
-
 /* Q1: Who is the senior most employee based on job title? */
 
 SELECT title, last_name, first_name 
 FROM employee
 ORDER BY levels DESC
-LIMIT 1
+LIMIT 1v
 
 
 /* Q2: Which countries have the most Invoices? */
@@ -47,9 +45,7 @@ LIMIT 1;
 
 
 
-/* Question Set 2 - Moderate */
-
-/* Q1: Write query to return the email, first name, last name, & Genre of all Rock Music listeners. 
+/* Q6: Write query to return the email, first name, last name, & Genre of all Rock Music listeners. 
 Return your list ordered alphabetically by email starting with A. */
 
 /*Method 1 */
@@ -78,7 +74,7 @@ WHERE genre.name LIKE 'Rock'
 ORDER BY email;
 
 
-/* Q2: Let's invite the artists who have written the most rock music in our dataset. 
+/* Q7: Let's invite the artists who have written the most rock music in our dataset. 
 Write a query that returns the Artist name and total track count of the top 10 rock bands. */
 
 SELECT artist.artist_id, artist.name,COUNT(artist.artist_id) AS number_of_songs
@@ -92,7 +88,7 @@ ORDER BY number_of_songs DESC
 LIMIT 10;
 
 
-/* Q3: Return all the track names that have a song length longer than the average song length. 
+/* Q8: Return all the track names that have a song length longer than the average song length. 
 Return the Name and Milliseconds for each track. Order by the song length with the longest songs listed first. */
 
 SELECT name, milliseconds
@@ -105,9 +101,9 @@ ORDER BY milliseconds DESC;
 
 
 
-/* Question Set 3 - Advance */
 
-/* Q1: Find how much amount spent by each customer on artists? Write a query to return customer name, artist name and total spent */
+
+/* Q9: Find how much amount spent by each customer on artists? Write a query to return customer name, artist name and total spent */
 
 
 
@@ -217,6 +213,7 @@ JOIN country_max_spending ms
 ON cc.billing_country = ms.billing_country
 WHERE cc.total_spending = ms.max_spending
 ORDER BY 1;
+
 
 
 
